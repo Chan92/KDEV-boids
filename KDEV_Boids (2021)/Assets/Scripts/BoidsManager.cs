@@ -43,7 +43,17 @@ public class BoidsManager:MonoBehaviour {
 	}
 
 	void UpdateBoidPositions() {
+
 		foreach(Boid b in boids) {
+			//Vector3 totalForce = Vector3.zero;
+			//totalForce += Seperation(b);
+			//totalForce += Cohesion(b);
+			//totalForce += Alignment(b);
+			//totalForce += BoundPosition(b);
+
+			//b.velocity = totalForce.normalized * moveSpeed;
+			//b.transform.position += b.velocity * Time.deltaTime;
+
 			cohesion = Cohesion(b);
 			seperation = Seperation(b);
 			alignment = Alignment(b);
