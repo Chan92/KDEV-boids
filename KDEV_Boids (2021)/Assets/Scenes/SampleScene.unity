@@ -154,9 +154,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boidPrefab: {fileID: 5325249527082819071, guid: 88c1ee815ec2cd9419ed07bd71058462, type: 3}
   boidAmount: 20
-  coheasionEffect: 5
-  seperationEffect: 3
-  alignmentEffect: 1
+  coheasionEffect: 10
+  seperationEffect: 3.5
+  alignmentEffect: 10
   moveSpeed: 15
   fieldSize: {x: 25, y: 15, z: 8}
 --- !u!4 &586225855
@@ -319,7 +319,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 100
+  field of view: 75
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
